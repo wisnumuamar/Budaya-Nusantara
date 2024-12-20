@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Nusantara</title>
+    <!-- Link Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+      <script src="script.js" defer></script>
+
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        /* Gaya dasar untuk mengatur font ke Poppins */
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- Navbar -->
+<nav class="navbar">
+    <img src="images/logo2.png" alt="">
+    <ul class="nav-links">
+        <li><a href="home.html" >Beranda</a></li>
+        <li><a href="sejarah-1.html"  >Sejarah</a></li>
+        <li><a href="budayatradisi.html">Budaya & Tradisi</a></li>
+        <li><a href="galeri.html" class="active">Galeri</a></li>
+        <li><a href="kegiatan.html">Kegiatan Nusantara</a></li>
+    </ul>
+    <div class="profile-section">
+        <span class="profile-name">Wisnu Mu'amar</span>
+        <img src="images/bisnis.png" alt="Profile Icon" class="profile-icon" />
+    </div>
+</nav>
+
+<div class="video-section">
+    <div class="video-container">
+        <video id="video-player" class="video-player" controls>
+            <source src="vidio/cinematik indonesia.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="video-overlay" id="video-overlay">
+            <button class="play-button" onclick="toggleVideo()">Play Video</button>
+        </div>
+    </div>
+    <div class="video-description">
+        <h3 class="video-title">Nusantara is Wonderful</h3>
+        <p class="video-info">Inilah Bukti Keindahan Alam dan Budaya Indonesia.</p>
+    </div>
+</div>
+
+
+
+<div class="product-section">
+    <div class="product-row">
+        <!-- Product Card 1 -->
+        <div class="product-card">
+            <img src="images/bromo.jpg" alt="Bouquet 1" class="product-img">
+            <h3 class="product-title">Gunung Bromo</h3>
+            <a href="https://youtu.be/nejukulONSQ?si=i1YKxC7qB9GAHlI9" class="btn-buy">Lihat Detail</a>
+        </div>
+        <!-- Product Card 2 -->
+        <div class="product-card">
+            <img src="images/rajaampat.jpg" alt="Bouquet 2" class="product-img">
+            <h3 class="product-title">Pantai Raja Ampat</h3>
+            <a href="https://youtu.be/Q-OWraAwJOE?si=ct2mWFZvo0pO11-Z" class="btn-buy">Lihat Detail</a>
+        </div>
+        <!-- Product Card 3 -->
+        <div class="product-card">
+            <img src="images/tari-saman.jpeg" alt="Bouquet 3" class="product-img">
+            <h3 class="product-title">Tari Saman Aceh</h3>
+            <a href="https://youtu.be/B_AXmqqPER0?si=f_IUI0-TiXyyAq7s" class="btn-buy">Lihat Detail</a>
+        </div>
+        <!-- Product Card 4 -->
+        <div class="product-card">
+            <img src="images/rumah-gadang.jpg" alt="Bouquet 4" class="product-img">
+            <h3 class="product-title">Rumah Adat Minangkabau</h3>
+            <a href="https://youtu.be/LxeOy6HV_QQ?si=DKnty3IOcu-GrfAI" class="btn-buy">Lihat Detail</a>
+        </div>
+    </div>
+</div>
+
+<div class="product-section">
+    <div class="product-row">
+        <!-- Product Card 1 -->
+        <div class="product-card">
+            <img src="images/tari-kecak.jpg" alt="Bouquet 1" class="product-img">
+            <h3 class="product-title">Tari Kecak Bali</h3>
+            <a href="https://youtu.be/zj5Aucgvluo?si=lWe33PObYaiDyBaT" class="btn-buy">Lihat Detail</a>
+        </div>
+        <!-- Product Card 2 -->
+        <div class="product-card">
+            <img src="images/upacara-ngaben.jpg" alt="Bouquet 2" class="product-img">
+            <h3 class="product-title">Upacara Adat Ngaben</h3>
+            <a href="https://youtu.be/wDUHa8qsub8?si=Ersl_1HF00RltNsL" class="btn-buy">Lihat Detail</a>
+        </div>
+        <!-- Product Card 3 -->
+        <div class="product-card">
+            <img src="images/joglo.jpg" alt="Bouquet 3" class="product-img">
+            <h3 class="product-title">Rumah Joglo</h3>
+            <a href="https://youtu.be/BOp-GbQbRGY?si=dwOVQrfptX37rrT8" class="btn-buy">Lihat Detail</a>
+        </div>
+        <!-- Product Card 4 -->
+        <div class="product-card">
+            <img src="images/upacara-cap-gomeh.jpg" alt="Bouquet 4" class="product-img">
+            <h3 class="product-title">Upacara Cap Go Meh</h3>
+            <a href="https://youtu.be/ncGtM29Q8JI?si=8XI0hJ1By4WiXS2k" class="btn-buy">Lihat Detail</a>
+        </div>
+    </div>
+</div>
+
+<div class="product-section">
+    <div class="product-row">
+        <!-- Product Card 1 -->
+        <div class="product-card">
+            <img src="images/danau-kelimutu.png" alt="Bouquet 1" class="product-img">
+            <h3 class="product-title">Danau Kelimutu</h3>
+            <a href="https://youtu.be/lpJ8CBRPbec?si=-xUpY0BWY4t3sWPC" class="btn-buy">Lihat Detail</a>
+        </div>
+        <!-- Product Card 2 -->
+        <div class="product-card">
+            <img src="images/Hutan Hujan Tropis.jpg" alt="Bouquet 2" class="product-img">
+            <h3 class="product-title">Hutan Hujan Tropis</h3>
+            <a href="https://youtu.be/MpeHuqn4D2M?si=P9iTuJwpu-Umif0T" class="btn-buy">Lihat Detail</a>
+        </div>
+        <!-- Product Card 3 -->
+        <div class="product-card">
+            <img src="images/candi borobudur.jpg" alt="Bouquet 3" class="product-img">
+            <h3 class="product-title">Candi Borobudur</h3>
+            <a href="https://youtu.be/Lv_GojoT1v4?si=iK8zi2CdYHQfghXw" class="btn-buy">Lihat Detail</a>
+        </div>
+        <!-- Product Card 4 -->
+        <div class="product-card">
+            <img src="images/batik.jpg" alt="Bouquet 4" class="product-img">
+            <h3 class="product-title">Batik</h3>
+            <a href="https://youtu.be/UabbHjNVzVg?si=O7T2n-XP6-rELfxX" class="btn-buy">Lihat Detail</a>
+        </div>
+    </div>
+</div>
+
+<div class="product-section">
+    <div class="product-row">
+        <!-- Product Card 1 -->
+        <div class="product-card">
+            <img src="images/Nusa Penida.jpeg" alt="Bouquet 1" class="product-img">
+            <h3 class="product-title">Nusa Penida</h3>
+            <a href="https://youtu.be/405RlUHDYdw?si=mX1ap6Q-t7dmNjws" class="btn-buy">Lihat Detail</a>
+        </div>
+        <!-- Product Card 2 -->
+        <div class="product-card">
+            <img src="images/Danau Sentani.avif" alt="Bouquet 2" class="product-img">
+            <h3 class="product-title">Danau Sentani</h3>
+            <a href="https://youtu.be/tsMBIl3-i2U?si=tSZwple8TDo7G_iE" class="btn-buy">Lihat Detail</a>
+        </div>
+        <!-- Product Card 3 -->
+        <div class="product-card">
+            <img src="images/Banda Neira.webp" alt="Bouquet 3" class="product-img">
+            <h3 class="product-title">Banda Neira</h3>
+            <a href="https://youtu.be/8cfvLuw5qws?si=ql-ImTw_FGovjLov" class="btn-buy">Lihat Detail</a>
+        </div>
+        <!-- Product Card 4 -->
+        <div class="product-card">
+            <img src="images/Pulau Sanur.jpg" alt="Bouquet 4" class="product-img">
+            <h3 class="product-title">Pulau Sanur</h3>
+            <a href="https://youtu.be/OJOckLJdszQ?si=KhiuFxl7BvyUp7Xb" class="btn-buy">Lihat Detail</a>
+        </div>
+    </div>
+</div>
+<div class="product-section">
+    <div class="product-row">
+        <!-- Product Card 1 -->
+        <div class="product-card">
+            <img src="images/Bunaken.jpg" alt="Bouquet 1" class="product-img">
+            <h3 class="product-title">Bunaken</h3>
+            <a href="https://youtu.be/ERkxRLFVQwg?si=vSBUOBvXjy7jiptE" class="btn-buy">Lihat Detail</a>
+        </div>
+        <!-- Product Card 2 -->
+        <div class="product-card">
+            <img src="images/Pulau Belitung.jpg" alt="Bouquet 2" class="product-img">
+            <h3 class="product-title">Pulau Belitung</h3>
+            <a href="https://youtu.be/nkHsz0_VpOs?si=2TjMapeW2HonA36m" class="btn-buy">Lihat Detail</a>
+        </div>
+        <!-- Product Card 3 -->
+        <div class="product-card">
+            <img src="images/Taman Nasional Ujung Kulon.jpg" alt="Bouquet 3" class="product-img">
+            <h3 class="product-title">Taman Nasional Ujung Kulon</h3>
+            <a href="https://youtu.be/w0jbyPs96mc?si=_cJeFegg73L1l_hS" class="btn-buy">Lihat Detail</a>
+        </div>
+        <!-- Product Card 4 -->
+        <div class="product-card">
+            <img src="images/Danau Kelimutu.jpg" alt="Bouquet 4" class="product-img">
+            <h3 class="product-title">Danau Kelimutu</h3>
+            <a href="https://youtu.be/lpJ8CBRPbec?si=pWuDCkToEkLTZwk6" class="btn-buy">Lihat Detail</a>
+        </div>
+    </div>
+</div>
+<div class="product-section">
+    <div class="product-row">
+        <!-- Product Card 1 -->
+        <div class="product-card">
+            <img src="images/Green Canyon.jpg" alt="Bouquet 1" class="product-img">
+            <h3 class="product-title">Green Canyon</h3>
+            <a href="https://youtu.be/RpYuuhx8TRQ?si=b5F2jiQ5bKGbASMR" class="btn-buy">Lihat Detail</a>
+        </div>
+        <!-- Product Card 2 -->
+        <div class="product-card">
+            <img src="images/candi prambanan.jpg" alt="Bouquet 2" class="product-img">
+            <h3 class="product-title">Candi Prambanan</h3>
+            <a href="https://youtu.be/sDNHiBHMG8s?si=DtcGStCGnNcOXWHF" class="btn-buy">Lihat Detail</a>
+        </div>
+        <!-- Product Card 3 -->
+        <div class="product-card">
+            <img src="images/danau 3 warna.jpg" alt="Bouquet 3" class="product-img">
+            <h3 class="product-title">Danau 3 Warna</h3>
+            <a href="https://youtu.be/894hY8BnmM8?si=cQOzqyg9ZjRRwXYv" class="btn-buy">Lihat Detail</a>
+        </div>
+        <!-- Product Card 4 -->
+        <div class="product-card">
+            <img src="images/kawah ijen.jpg" alt="Bouquet 4" class="product-img">
+            <h3 class="product-title">Kawah Ijen</h3>
+            <a href="https://youtu.be/ReLXKOKX7vs?si=ACtB-mOIi6rmnKVk" class="btn-buy">Lihat Detail</a>
+        </div>
+    </div>
+</div>
+<div class="product-section">
+    <div class="product-row">
+        <!-- Product Card 1 -->
+        <div class="product-card">
+            <img src="images/pulau komodo.jpg" alt="Bouquet 1" class="product-img">
+            <h3 class="product-title">Pulau Komodo</h3>
+            <a href="https://youtu.be/WuIZyLOSD8Y?si=gIXoBiTkdh148ge0" class="btn-buy">Lihat Detail</a>
+        </div>
+        <!-- Product Card 2 -->
+        <div class="product-card">
+            <img src="images/ladang matahari.jpg" alt="Bouquet 2" class="product-img">
+            <h3 class="product-title">Bunga Ladang Matahari</h3>
+            <a href="https://youtu.be/SahWF2retXE?si=MkypgXVb5lo7xkS3" class="btn-buy">Lihat Detail</a>
+        </div>
+        <!-- Product Card 3 -->
+        <div class="product-card">
+            <img src="images/serambimekah.jpg" alt="Bouquet 3" class="product-img">
+            <h3 class="product-title">Serambi Mekah</h3>
+            <a href="https://youtu.be/RTZiu-XGiO8?si=Rfy7yV0AiyjAFcAe" class="btn-buy">Lihat Detail</a>
+        </div>
+        <!-- Product Card 4 -->
+        <div class="product-card">
+            <img src="images/Danau Toba.jpg" alt="Bouquet 4" class="product-img">
+            <h3 class="product-title">Danau Toba</h3>
+            <a href="https://youtu.be/src30a0VOuw?si=WTliJvklWWCQi7Kx" class="btn-buy">Lihat Detail</a>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Popup Gambar -->
+<div id="popup" class="popup">
+    <span class="close" onclick="closePopup()">×</span>
+    <img id="popup-img" src="" alt="Popup Image">
+</div>
+
+
+
+  <footer>
+   <div class="footer-container">
+       <div class="footer-about">
+           <h4>Hari Nusantara</h4>
+           <p>Hari Nusantara baru ditetapkan pada tanggal 11 Desember 2001 oleh Presiden RI Megawati Soekarnoputri, melalui Surat Keputusan Presiden Nomor 126 Tahun 2001.</p>
+           <img src="images/nusantaraday.png" width="395px" height="305px" alt="Hari Nusantara">
+        </div>
+       <div class="footer-links">
+           <h4>Tautan Cepat</h4>
+           <ul>
+               <li><a href="#home">Beranda</a></li>
+               <li><a href="#about">Sejarah</a></li>
+               <li><a href="#contact">Budaya dan Tradisi</a></li>
+               <li><a href="#privacy">Galeri</a></li>
+               <li><a href="#privacy">Kegiatan Nusantara</a></li>
+               <li><a href="https://www.bola.com/ragam/read/4529769/pengertian-budaya-ciri-fungsi-unsur-dan-contohnya-yang-ada-di-indonesia">Pengertian Budaya</a></li>
+               <li><a href="https://budaya-data.kemdikbud.go.id/">Budaya Kita</a></li>
+               <li><a href="https://kumparan.com/pengertian-dan-istilah/pengertian-tradisi-jenis-dan-contohnya-di-indonesia-21OHtJbObQd">Pengertian Tradisi</a></li>
+               <li><a href="https://nasional.kompas.com/read/2023/12/12/00300031/sejarah-hari-nusantara-latar-belakang-dan-tujuan">Sejarah Hari Nusantara</a></li>
+               <li><a href="https://rri.co.id/lain-lain/915065/keberagaman-budaya-indonesia-pilar-persatuan-dan-kesatuan-bangsa">Keberagaman Budaya</a></li>
+               <li><a href="https://perpustakaan.kkp.go.id/knowledgerepository/index.php?p=show_detail&id=30">Sejarah Maritim</a></li>
+               <li><a href="https://www.goodnewsfromindonesia.id/2023/02/27/fakta-menarik-indonesia">Keindahan Alam</a></li>
+               <li><a href="https://www.kompas.com/skola/read/2020/05/29/090000069/potensi-sumber-daya-alam-lautan?page=all">Kekayaan Samudera</a></li>
+           </ul>
+       </div>
+       <div class="social-icons">
+         <h4>Ikuti Kami</h4>
+         <ul>
+             <li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
+             <li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+             <li><a href="#" target="_blank"><i class="fab fa-youtube"></i></a></li>
+             <li><a href="#" target="_blank"><i class="fab fa-whatsapp"></i></a></li>
+             <li><a href="#" target="_blank"><i class="fab fa-telegram"></i></a></li>
+             <li><a href="#" target="_blank"><i class="fab fa-tiktok"></i></a></li>
+             
+         </ul>
+         <div class="social-image">
+            <img src="images/island.png" width="395px" height="305px" alt="Hari Nusantara">
+        </div>
+     </div>
+     
+     
+     
+     
+   </div>
+   <div class="footer-bottom">
+       <p>&copy; 2024 Nusantara. All rights reserved.</p>
+   </div>
+</footer>
+
+ <script src="javascript/scripts.js"></script>
+ <script>
+    // Ambil elemen tombol dan popup
+const watchVideoButton = document.getElementById('watch-video');
+const videoPopup = document.getElementById('video-popup');
+const closePopupButton = document.getElementById('close-popup');
+
+// Ketika tombol "Tonton Video" diklik
+watchVideoButton.addEventListener('click', () => {
+    videoPopup.style.display = 'flex'; // Tampilkan popup
+});
+
+// Ketika tombol close diklik
+closePopupButton.addEventListener('click', () => {
+    videoPopup.style.display = 'none'; // Sembunyikan popup
+});
+
+// Menutup popup jika pengguna mengklik di luar area konten video
+videoPopup.addEventListener('click', (e) => {
+    if (e.target === videoPopup) {
+        videoPopup.style.display = 'none';
+    }
+});
+
+// Fungsi untuk membuka popup
+function openPopup(imageSrc) {
+    document.getElementById('popup').style.display = 'flex'; // Tampilkan popup
+    document.getElementById('popup-img').src = imageSrc; // Ganti gambar di popup dengan gambar yang dipilih
+}
+
+// Fungsi untuk menutup popup
+function closePopup() {
+    document.getElementById('popup').style.display = 'none'; // Sembunyikan popup
+}
+
+// Fungsi untuk toggle video (play/pause)
+function toggleVideo() {
+    const video = document.getElementById('video-player');
+    const overlay = document.querySelector('.video-overlay');
+
+    if (video.paused) {
+        video.play();
+        overlay.style.opacity = '0';  // Sembunyikan overlay setelah video dimulai
+    } else {
+        video.pause();
+        overlay.style.opacity = '1';  // Tampilkan overlay jika video dijeda
+    }
+}
+
+
+ </script>
+
+</body>
+</html>

@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website SmartGen</title>
+    <!-- Link Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Gaya dasar untuk mengatur font ke Poppins */
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <p class="coba">SMARTGEN</p>
+        <ul class="nav-links">
+            <li><a href="home.html" class="active">Home</a></li>
+            <li><a href="chatbot.html">ChatBot</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <button class="login-btn">Login</button>
+        </ul>
+    </nav>
+
+    <!-- Background Image Section -->
+    <section class="hero">
+        <div class="hero-text">
+            <p>Selamat Datang di Website SmartGen</p>
+            <h3>Mimpi besar membutuhkan keberanian besar. Jangan biarkan rasa takut menghentikan langkahmu.</h3>
+            <button class="cta-button">Gabung Sekarang</button>
+        </div>
+    </section>
+
+   
+   
+         <!-- Jumbotron Section -->
+<section class="jumbotron">
+   <div class="jumbotron-container">
+       <!-- Teks di sebelah kiri -->
+       <div class="jumbotron-text">
+           <h1>Belajar Menjadi Lebih Seru</h1>
+           <p>
+            "SmartGen adalah platform pembelajaran inovatif yang dirancang untuk membuat belajar terasa seperti sebuah petualangan. Raih poin, selesaikan misi, dan capai prestasi dengan cara yang menyenangkan. Bersainglah dengan teman-teman sekelas atau siswa dari seluruh Indonesia untuk meraih peringkat tertinggi dan dapatkan hadiah menarik!"
+           </p>
+           <button class="cta-button">Gabung Sekarang</button>
+       </div>
+
+       <!-- Gambar di sebelah kanan -->
+       <div class="jumbotron-image">
+         <img src="images/jumbo3 (3).jpg" alt="" width="300" height="400">
+       </div>
+   </div>
+     </section>
+
+
+         <!-- Background Image Section -->
+    <section class="jawo">
+      <div class="hero-text">
+          <p>Peringkat 5 Besar Siswa Siswi Terbaik</p>
+          <div class="container">
+            <header>
+            </header>
+            <section class="top-students">
+                <!-- Card siswa -->
+                <div class="student-card">
+                    <div class="rank">1</div>
+                    <img src="images/testimoni2.jpg" alt="Siswa 1" class="student-img">
+                    <h3>Rania Aulia</h3>
+                    <p>Poin: 9800</p>
+                </div>
+    
+                <div class="student-card">
+                    <div class="rank">2</div>
+                    <img src="images/testimoni2.jpg" alt="Siswa 2" class="student-img">
+                    <h3>Aditya Pratama</h3>
+                    <p>Poin: 9200</p>
+                </div>
+    
+                <div class="student-card">
+                    <div class="rank">3</div>
+                    <img src="images/testimoni2.jpg" alt="Siswa 3" class="student-img">
+                    <h3>Nadia Kusuma</h3>
+                    <p>Poin: 8900</p>
+                </div>
+
+                <div class="student-card">
+                  <div class="rank">4</div>
+                  <img src="images/testimoni2.jpg" alt="Siswa 3" class="student-img">
+                  <h3>Nadia Kusuma</h3>
+                  <p>Poin: 8900</p>
+              </div>
+
+              <div class="student-card">
+               <div class="rank">5</div>
+               <img src="images/testimoni2.jpg" alt="Siswa 3" class="student-img">
+               <h3>Nadia Kusuma</h3>
+               <p>Poin: 8900</p>
+           </div>
+            </section>
+        </div>
+    
+      </div>
+  </section>
+
+  <div class="container">
+   <header>
+       <h1>Daftar 10 Sekolah Terbaik di SmartGen</h1>
+   </header>
+
+   <section class="dashboard">
+       <!-- Tabel untuk menampilkan daftar sekolah -->
+       <table class="ranking-table">
+           <thead>
+               <tr>
+                   <th>Ranking</th>
+                   <th>Nama Sekolah</th>
+                   <th>Jumlah Siswa</th>
+                   <th>Poin Terkumpul</th>
+                   <th>Aksi</th>
+               </tr>
+           </thead>
+           <tbody>
+               <tr>
+                   <td>1</td>
+                   <td>SMA 1 Jakarta</td>
+                   <td>1200</td>
+                   <td>9500</td>
+                   <td><button class="details-btn" onclick="toggleDetails(1)">Cek Detail</button></td>
+               </tr>
+               <tr id="details-1" class="details">
+                   <td colspan="5">
+                       <p><strong>Informasi Detail:</strong></p>
+                       <p>Jumlah Kelas: 30</p>
+                       <p>Prestasi: Juara 1 Lomba Sains Nasional</p>
+                   </td>
+               </tr>
+
+               <tr>
+                   <td>2</td>
+                   <td>SMA 2 Surabaya</td>
+                   <td>1100</td>
+                   <td>8700</td>
+                   <td><button class="details-btn" onclick="toggleDetails(2)">Cek Detail</button></td>
+               </tr>
+               <tr id="details-2" class="details">
+                   <td colspan="5">
+                       <p><strong>Informasi Detail:</strong></p>
+                       <p>Jumlah Kelas: 28</p>
+                       <p>Prestasi: Juara 2 Lomba Matematika</p>
+                   </td>
+               </tr>
+
+               <tr>
+                   <td>3</td>
+                   <td>SMA 3 Bandung</td>
+                   <td>1300</td>
+                   <td>10200</td>
+                   <td><button class="details-btn" onclick="toggleDetails(3)">Cek Detail</button></td>
+               </tr>
+               <tr id="details-3" class="details">
+                   <td colspan="5">
+                       <p><strong>Informasi Detail:</strong></p>
+                       <p>Jumlah Kelas: 35</p>
+                       <p>Prestasi: Juara 3 Olimpiade Fisika</p>
+                   </td>
+               </tr>
+
+               <tr>
+                   <td>4</td>
+                   <td>SMA 4 Yogyakarta</td>
+                   <td>1000</td>
+                   <td>8000</td>
+                   <td><button class="details-btn" onclick="toggleDetails(4)">Cek Detail</button></td>
+               </tr>
+               <tr id="details-4" class="details">
+                   <td colspan="5">
+                       <p><strong>Informasi Detail:</strong></p>
+                       <p>Jumlah Kelas: 25</p>
+                       <p>Prestasi: Juara 1 Kompetisi Debat</p>
+                   </td>
+               </tr>
+
+               <tr>
+                  <td>5</td>
+                  <td>SMA 4 Yogyakarta</td>
+                  <td>1000</td>
+                  <td>8000</td>
+                  <td><button class="details-btn" onclick="toggleDetails(5)">Cek Detail</button></td>
+              </tr>
+              <tr id="details-5" class="details">
+                  <td colspan="5">
+                      <p><strong>Informasi Detail:</strong></p>
+                      <p>Jumlah Kelas: 25</p>
+                      <p>Prestasi: Juara 1 Kompetisi Debat</p>
+                  </td>
+              </tr>
+
+              <tr>
+               <td>6</td>
+               <td>SMA 4 Yogyakarta</td>
+               <td>1000</td>
+               <td>8000</td>
+               <td><button class="details-btn" onclick="toggleDetails(6)">Cek Detail</button></td>
+           </tr>
+           <tr id="details-6" class="details">
+               <td colspan="5">
+                   <p><strong>Informasi Detail:</strong></p>
+                   <p>Jumlah Kelas: 25</p>
+                   <p>Prestasi: Juara 1 Kompetisi Debat</p>
+               </td>
+           </tr>
+
+           <tr>
+            <td>7</td>
+            <td>SMA 4 Yogyakarta</td>
+            <td>1000</td>
+            <td>8000</td>
+            <td><button class="details-btn" onclick="toggleDetails(7)">Cek Detail</button></td>
+        </tr>
+        <tr id="details-7" class="details">
+            <td colspan="5">
+                <p><strong>Informasi Detail:</strong></p>
+                <p>Jumlah Kelas: 25</p>
+                <p>Prestasi: Juara 1 Kompetisi Debat</p>
+            </td>
+        </tr>
+
+        <tr>
+         <td>8</td>
+         <td>SMA 4 Yogyakarta</td>
+         <td>1000</td>
+         <td>8000</td>
+         <td><button class="details-btn" onclick="toggleDetails(8)">Cek Detail</button></td>
+     </tr>
+     <tr id="details-8" class="details">
+         <td colspan="5">
+             <p><strong>Informasi Detail:</strong></p>
+             <p>Jumlah Kelas: 25</p>
+             <p>Prestasi: Juara 1 Kompetisi Debat</p>
+         </td>
+     </tr>
+
+     <tr>
+      <td>9</td>
+      <td>SMA 4 Yogyakarta</td>
+      <td>1000</td>
+      <td>8000</td>
+      <td><button class="details-btn" onclick="toggleDetails(9)">Cek Detail</button></td>
+  </tr>
+  <tr id="details-9" class="details">
+      <td colspan="5">
+          <p><strong>Informasi Detail:</strong></p>
+          <p>Jumlah Kelas: 25</p>
+          <p>Prestasi: Juara 1 Kompetisi Debat</p>
+      </td>
+  </tr>
+
+  <tr>
+   <td>10</td>
+   <td>SMA 4 Yogyakarta</td>
+   <td>1000</td>
+   <td>8000</td>
+   <td><button class="details-btn" onclick="toggleDetails(10)">Cek Detail</button></td>
+</tr>
+<tr id="details-10" class="details">
+   <td colspan="5">
+       <p><strong>Informasi Detail:</strong></p>
+       <p>Jumlah Kelas: 25</p>
+       <p>Prestasi: Juara 1 Kompetisi Debat</p>
+   </td>
+</tr>
+               <!-- Tambahkan data lainnya di sini -->
+           </tbody>
+       </table>
+   </section>
+</div>
+   
+
+
+  <footer>
+   <div class="footer-container">
+       <div class="footer-about">
+           <h4>SmartGen</h4>
+           <p>SmartGen adalah platform belajar yang menyenangkan dengan fitur gamifikasi untuk membantu siswa SMP dan SMA menguasai materi pelajaran secara interaktif.</p>
+       </div>
+       <div class="footer-links">
+           <h4>Tautan Cepat</h4>
+           <ul>
+               <li><a href="#home">Home</a></li>
+               <li><a href="#about">About</a></li>
+               <li><a href="#contact">Contact</a></li>
+               <li><a href="#privacy">Privacy Policy</a></li>
+               <li><a href="#terms">Terms & Conditions</a></li>
+           </ul>
+       </div>
+       <div class="social-icons">
+         <h4>Ikuti Kami</h4>
+         <ul>
+             <li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
+             <li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+             <li><a href="#" target="_blank"><i class="fab fa-youtube"></i></a></li>
+             <li><a href="#" target="_blank"><i class="fab fa-whatsapp"></i></a></li>
+             <li><a href="#" target="_blank"><i class="fab fa-telegram"></i></a></li>
+             <li><a href="#" target="_blank"><i class="fab fa-tiktok"></i></a></li>
+         </ul>
+     </div>
+     
+     
+   </div>
+   <div class="footer-bottom">
+       <p>&copy; 2024 SmartGen. All rights reserved.</p>
+   </div>
+</footer>
+
+ <!-- Container for mouse effect -->
+ <div class="mouse-effect"></div>
+ <script src="js/script.js"></script>
+ <script>
+   function toggleDetails(schoolId) {
+    const details = document.getElementById(`details-${schoolId}`);
+    const isVisible = details.style.display === 'block';
+    
+    // Toggle visibility of the details
+    if (isVisible) {
+        details.style.display = 'none';
+    } else {
+        details.style.display = 'block';
+    }
+}
+
+// Ambil semua link menu
+const menuLinks = document.querySelectorAll(".nav-links a");
+
+// Dapatkan URL halaman saat ini
+const currentPage = window.location.pathname;
+
+// Loop dan tambahkan class active ke link yang sesuai
+menuLinks.forEach(link => {
+    if (link.getAttribute("href") === currentPage) {
+        link.classList.add("active");
+    }
+});
+
+ </script>
+</body>
+</html>

@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Nusantara</title>
+    <!-- Link Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+      <script src="script.js" defer></script>
+
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        /* Gaya dasar untuk mengatur font ke Poppins */
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- Navbar -->
+<nav class="navbar">
+    <img src="images/logo2.png" alt="">
+    <ul class="nav-links">
+        <li><a href="home.html" >Beranda</a></li>
+        <li><a href="sejarah-1.html">Sejarah</a></li>
+        <li><a href="budayatradisi.html" class="active">Budaya & Tradisi</a></li>
+        <li><a href="galeri.html">Galeri</a></li>
+        <li><a href="kegiatan.html">Kegiatan Nusantara</a></li>
+    </ul>
+    <div class="profile-section">
+        <span class="profile-name">Wisnu Mu'amar</span>
+        <img src="images/bisnis.png" alt="Profile Icon" class="profile-icon" />
+    </div>
+</nav>
+
+<div class="video-section">
+    <div class="video-container">
+        <video id="video-player" class="video-player" controls>
+            <source src="vidio/nusantara.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="video-overlay" id="video-overlay">
+            <button class="play-button" onclick="toggleVideo()">Play Video</button>
+        </div>
+    </div>
+    <div class="video-description">
+        <h3 class="video-title">Nusantara is Wonderful</h3>
+        <p class="video-info">keanekaragaman budaya dari Sabang sampai Merauke</p>
+    </div>
+</div>
+
+<section class="dashboard">
+    <div class="dashboard-container">
+        <!-- Total Budaya -->
+        <div class="card stat-card">
+            <div class="card-content">
+                <div class="stat-icon">
+                    <img src="images/budaya2.jpg" alt="Budaya Icon" />
+                </div>
+                <div class="stat-info">
+                    <h2 id="total-budaya">1345</h2>
+                    <p>Total Budaya</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Peta -->
+        <div class="card map-card">
+            <div class="card-content">
+                <div class="map-container">
+                    <img src="images/petaindonesia.jpg" alt="Peta Indonesia" class="map-image" />
+                </div>
+            </div>
+        </div>
+
+        <!-- Total Provinsi -->
+        <div class="card stat-card">
+            <div class="card-content">
+                <div class="stat-icon">
+                    <img src="images/budaya1.jpg" alt="Provinsi Icon" />
+                </div>
+                <div class="stat-info">
+                    <h2 id="total-provinsi">38</h2>
+                    <p>Total Provinsi</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</div>
+
+
+
+<section class="provinces-section">
+    <!-- List of Provinces -->
+    <div class="provinces-container">
+        <div class="province-card">
+            <img src="images/serambimekah.jpg" alt="Aceh">
+            <h3><a href="aceh.html" class="province-link">Aceh</a></h3>
+        </div>
+        
+        <div class="province-card">
+            <img src="images/Sumatera Utara/Rumah Bolon.jpg" alt="Sumatera Utara">
+            <h3><a href="sumaterautara.html" class="province-link">Sumatera Utara</a></h3>
+        </div>
+        <div class="province-card">
+            <img src="images/Sumatera Barat/Rumah Gadang.jpg" alt="Sumatera Barat">
+            <h3><a href="sumaterabarat.html" class="province-link">Sumatera Barat</a></h3>
+        </div>
+        <div class="province-card">
+            <img src="images/riau.webp" alt="Riau">
+            <h3><a href="riau.html" class="province-link">Riau</a></h3>
+        </div>
+        <div class="province-card">
+            <img src="images/anjunganjambi.jpg" alt="Jambi">
+            <h3><a href="jambi.html" class="province-link">Jambi</a></h3>
+        </div>
+        <div class="province-card">
+            <img src="images/Sumatera Selatan.jpg" alt="Sumatera Selatan">
+            <h3><a href="sumateraselatan.html" class="province-link">Sumatera Selatan</a></h3>
+        </div>
+        <div class="province-card">
+            <img src="images/Bengkulu new.jpg" alt="Bengkulu">
+            <h3><a href="bengkulu.html" class="province-link">Bengkulu</a></h3>
+        </div>
+        <div class="province-card">
+            <img src="images/lampung.jpg" alt="Lampung">
+            <h3><a href="lampung.html" class="province-link">Lampung</a></h3>
+        </div>
+        <div class="province-card">
+            <img src="images/Kalimantan Barat.jpg" alt="Kalimantan Barat">
+            <h3><a href="kalimantanbarat.html" class="province-link">Kalimantan Barat</a></h3>
+        </div>
+        <div class="province-card">
+            <img src="images/Kalimantan Tengah.jpg" alt="Kalimantan Tengah">
+            <h3><a href="kalimantantengah.html" class="province-link">Kalimantan Tengah</a></h3>
+        </div>
+        <div class="province-card">
+            <img src="images/Kalimantan Timur.webp" alt="Kalimantan Timur">
+            <h3><a href="kalimantantimur.html" class="province-link">Kalimantan Timur</a></h3>
+        </div>
+        <div class="province-card">
+            <img src="images/Kalimantan Selatan.webp" alt="Kalimantan Selatan">
+            <h3><a href="kalimantanselatan.html" class="province-link">Kalimantan Selatan</a></h3>
+        </div>
+        <div class="province-card">
+            <img src="images/Kalimantan Utara.webp" alt="Kalimantan Utara">
+            <h3><a href="kalimantanutara.html" class="province-link">Kalimantan Utara</a></h3>
+        </div>
+        <div class="province-card">
+            <img src="images/Sulawesi Utara.jpeg" alt="Sulawesi Utara">
+            <h3><a href="sulawesiutara.html" class="province-link">Sulawesi Utara</a></h3>
+        </div>
+        <div class="province-card">
+            <img src="images/Sulawesi Tengah.png" alt="Sulawesi Tengah">
+            <h3><a href="sulawesitengah.html" class="province-link">Sulawesi Tengah</a></h3>
+        </div>
+        <div class="province-card">
+            <img src="images/Sulawesi Selatan.jpg" alt="Sulawesi Selatan">
+            <h3><a href="sulawesiselatan.html" class="province-link">Sulawesi Selatan</a></h3>
+        </div>
+        <div class="province-card">
+            <img src="images/Sulawesi Tenggara.jpg" alt="Sulawesi Tenggara">
+            <h3><a href="sulawesitenggara.html" class="province-link">Sulawesi Tenggara</a></h3>
+        </div>
+        <div class="province-card">
+            <img src="images/Gorontalo.jpg" alt="Gorontalo">
+            <h3><a href="gorontalo.html" class="province-link">Gorontalo</a></h3>
+        </div>
+        <div class="province-card">
+            <img src="images/Sulawesi Barat.jpg" alt="Sulawesi Barat">
+            <h3><a href="sulawesibarat.html" class="province-link">Sulawesi Barat</a></h3>
+        </div>
+        <div class="province-card">
+            <img src="images/Maluku.jpg" alt="Maluku">
+            <h3><a href="maluku.html" class="province-link">Maluku</a></h3>
+        </div>
+        <div class="province-card">
+            <img src="images/Maluku Utara.jpg" alt="Maluku Utara">
+            <h3><a href="malukuutara.html" class="province-link">Maluku Utara</a></h3>
+        </div>
+        <div class="province-card">
+            <img src="images/Papua.jpg" alt="Papua">
+            <h3><a href="papua.html" class="province-link">Papua</a></h3>
+        </div>
+        <div class="province-card">
+            <img src="images/Papua Barat.jpg" alt="Papua Barat">
+            <h3><a href="papuabarat.html" class="province-link">Papua Barat</a></h3>
+        </div>
+        <div class="province-card">
+            <img src="images/Jawa Tengah.jpg" alt="Papua Barat">
+            <h3><a href="jawatengah.html" class="province-link">Jawa Tengah</a></h3>
+        </div>
+        <div class="province-card">
+            <img src="images/DI Yogyakarta.jpeg" alt="Papua Barat">
+            <h3><a href="yogyakarta.html" class="province-link">DI Yogyakarta</a></h3>
+        </div>
+        <div class="province-card">
+            <img src="images/Jawa Timur/patung_surabaya.jpg" alt="Papua Barat">
+            <h3><a href="jawatimur.html" class="province-link">Jawa Timur</a></h3>
+        </div>
+        <div class="province-card">
+            <img src="images/Bali.jpg" alt="Papua Barat">
+            <h3><a href="bali.html" class="province-link">Bali</a></h3>
+        </div>
+        <div class="province-card">
+            <img src="images/Nusa Tenggara Barat.jpg" alt="Papua Barat">
+            <h3><a href="nusatenggarabarat.html" class="province-link">Nusa Tenggara Barat</a></h3>
+        </div>
+        <div class="province-card">
+            <img src="images/Nusa Tenggara Timur/Pulau Sumba.jpg" alt="Papua Barat">
+            <h3><a href="nusatenggaratimur.html" class="province-link">Nusa Tenggara Timur</a></h3>
+        </div>
+        <div class="province-card">
+            <img src="images/Jawa Barat.jpg" alt="Papua Barat">
+            <h3><a href="jawabarat.html" class="province-link">Jawa Barat</a></h3>
+        </div>
+        <div class="province-card">
+            <img src="images/Bangka Belitung.jpg" alt="Papua Barat">
+            <h3><a href="bangkabelitung.html" class="province-link">Bangka Belitung</a></h3>
+        </div>
+        <div class="province-card">
+            <img src="images/DKI Jakarta.jpg" alt="Papua Barat">
+            <h3><a href="jakarta.html" class="province-link">DKI Jakarta</a></h3>
+        </div>
+        <div class="province-card">
+            <img src="images/Banten/Masjid Agung Banten.jpg" alt="Papua Barat">
+            <h3><a href="banten.html" class="province-link">Banten</a></h3>
+        </div>
+        <div class="province-card">
+            <img src="images/Papua Barat Daya.jpg" alt="Papua Barat">
+            <h3><a href="papuabaratdaya.html" class="province-link">Papua Barat Daya</a></h3>
+        </div>
+        <div class="province-card">
+            <img src="images/Papua Pegunungan.jpeg" alt="Papua Barat">
+            <h3><a href="papuapegunungan.html" class="province-link">Papua Pegunungan</a></h3>
+        </div>
+        <div class="province-card">
+            <img src="images/Papua Tengah.jpg" alt="Papua Barat">
+            <h3><a href="papuatengah.html" class="province-link">Papua Tengah</a></h3>
+        </div>
+      
+    </div>
+</section>
+
+<!-- Modal for showing culture -->
+<div id="culture-modal" class="modal">
+    <div class="modal-content">
+        <span class="close-button" onclick="closeModal()">&times;</span>
+        <h2 id="modal-title"></h2>
+        <p id="modal-description"></p>
+    </div>
+</div>
+
+
+<!-- Popup Gambar -->
+<div id="popup" class="popup">
+    <span class="close" onclick="closePopup()">×</span>
+    <img id="popup-img" src="" alt="Popup Image">
+</div>
+
+
+
+  <footer>
+   <div class="footer-container">
+       <div class="footer-about">
+           <h4>Hari Nusantara</h4>
+           <p>Hari Nusantara baru ditetapkan pada tanggal 11 Desember 2001 oleh Presiden RI Megawati Soekarnoputri, melalui Surat Keputusan Presiden Nomor 126 Tahun 2001.</p>
+           <img src="images/nusantaraday.png" width="395px" height="305px" alt="Hari Nusantara">
+        </div>
+       <div class="footer-links">
+           <h4>Tautan Cepat</h4>
+           <ul>
+               <li><a href="#home">Beranda</a></li>
+               <li><a href="#about">Sejarah</a></li>
+               <li><a href="#budayatradisi.html">Budaya dan Tradisi</a></li>
+               <li><a href="#galeri.html">Galeri</a></li>
+               <li><a href="#kegiatan.html">Kegiatan Nusantara</a></li>
+               <li><a href="https://www.bola.com/ragam/read/4529769/pengertian-budaya-ciri-fungsi-unsur-dan-contohnya-yang-ada-di-indonesia">Pengertian Budaya</a></li>
+               <li><a href="https://budaya-data.kemdikbud.go.id/">Budaya Kita</a></li>
+               <li><a href="https://kumparan.com/pengertian-dan-istilah/pengertian-tradisi-jenis-dan-contohnya-di-indonesia-21OHtJbObQd">Pengertian Tradisi</a></li>
+               <li><a href="https://nasional.kompas.com/read/2023/12/12/00300031/sejarah-hari-nusantara-latar-belakang-dan-tujuan">Sejarah Hari Nusantara</a></li>
+               <li><a href="https://rri.co.id/lain-lain/915065/keberagaman-budaya-indonesia-pilar-persatuan-dan-kesatuan-bangsa">Keberagaman Budaya</a></li>
+               <li><a href="https://perpustakaan.kkp.go.id/knowledgerepository/index.php?p=show_detail&id=30">Sejarah Maritim</a></li>
+               <li><a href="https://www.goodnewsfromindonesia.id/2023/02/27/fakta-menarik-indonesia">Keindahan Alam</a></li>
+               <li><a href="https://www.kompas.com/skola/read/2020/05/29/090000069/potensi-sumber-daya-alam-lautan?page=all">Kekayaan Samudera</a></li>
+           </ul>
+       </div>
+       <div class="social-icons">
+         <h4>Ikuti Kami</h4>
+         <ul>
+             <li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
+             <li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+             <li><a href="#" target="_blank"><i class="fab fa-youtube"></i></a></li>
+             <li><a href="#" target="_blank"><i class="fab fa-whatsapp"></i></a></li>
+             <li><a href="#" target="_blank"><i class="fab fa-telegram"></i></a></li>
+             <li><a href="#" target="_blank"><i class="fab fa-tiktok"></i></a></li>
+             
+         </ul>
+         <div class="social-image">
+            <img src="images/island.png" width="395px" height="305px" alt="Hari Nusantara">
+        </div>
+     </div>
+     
+     
+     
+     
+   </div>
+   <div class="footer-bottom">
+       <p>&copy; 2024 Nusantara. All rights reserved.</p>
+   </div>
+</footer>
+
+ <script src="javascript/scripts.js"></script>
+ <script>
+    // Ambil elemen tombol dan popup
+const watchVideoButton = document.getElementById('watch-video');
+const videoPopup = document.getElementById('video-popup');
+const closePopupButton = document.getElementById('close-popup');
+
+// Ketika tombol "Tonton Video" diklik
+watchVideoButton.addEventListener('click', () => {
+    videoPopup.style.display = 'flex'; // Tampilkan popup
+});
+
+// Ketika tombol close diklik
+closePopupButton.addEventListener('click', () => {
+    videoPopup.style.display = 'none'; // Sembunyikan popup
+});
+
+// Menutup popup jika pengguna mengklik di luar area konten video
+videoPopup.addEventListener('click', (e) => {
+    if (e.target === videoPopup) {
+        videoPopup.style.display = 'none';
+    }
+});
+
+// Fungsi untuk membuka popup
+function openPopup(imageSrc) {
+    document.getElementById('popup').style.display = 'flex'; // Tampilkan popup
+    document.getElementById('popup-img').src = imageSrc; // Ganti gambar di popup dengan gambar yang dipilih
+}
+
+// Fungsi untuk menutup popup
+function closePopup() {
+    document.getElementById('popup').style.display = 'none'; // Sembunyikan popup
+}
+
+// Fungsi untuk toggle video (play/pause)
+function toggleVideo() {
+    const video = document.getElementById('video-player');
+    const overlay = document.querySelector('.video-overlay');
+
+    if (video.paused) {
+        video.play();
+        overlay.style.opacity = '0';  // Sembunyikan overlay setelah video dimulai
+    } else {
+        video.pause();
+        overlay.style.opacity = '1';  // Tampilkan overlay jika video dijeda
+    }
+}
+
+
+
+ </script>
+
+</body>
+</html>
