@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Website Nusantara</title>
     <!-- Link Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-      <!-- <script src="script.js" defer></script> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- <script src="script.js" defer></script> -->
 
     <link rel="stylesheet" href="css/styles.css">
     <style>
@@ -17,127 +18,153 @@
         }
     </style>
 </head>
+
 <body>
-    
+
     <!-- Navbar -->
-<nav class="navbar">
-    <img src="images/logo2.png" alt="">
-    <ul class="nav-links">
-        <li><a href="html/home.html" class="active">Beranda</a></li>
-        <li><a href="sejarah-1.html">Sejarah</a></li>
-        <li><a href="budayatradisi.html">Budaya & Tradisi</a></li>
-        <li><a href="galeri.html">Galeri</a></li>
-        <li><a href="kegiatan.html">Kegiatan Nusantara</a></li>
-    </ul>
-    <div class="profile-section">
-        <span class="profile-name">Wisnu Mu'amar</span>
-        <img src="images/bisnis.png" alt="Profile Icon" class="profile-icon" />
-    </div>
-</nav>
+    <nav class="navbar">
+        <img src="images/logo2.png" alt="" class="img-logo">
+        <button class="navbar-toggle">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-list"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+            </svg>
+        </button>
+        <ul class="nav-links hidden">
+            <li><a href="home.html" class="active">Beranda</a></li>
+            <li><a href="sejarah-1.html">Sejarah</a></li>
+            <li><a href="budayatradisi.html">Budaya & Tradisi</a></li>
+            <li><a href="galeri.html">Galeri</a></li>
+            <li><a href="kegiatan.html">Kegiatan Nusantara</a></li>
+            <div class="profile-section">
+                <span class="profile-name">Wisnu Mu'amar</span>
+                <img src="images/bisnis.png" alt="Profile Icon" class="profile-icon" />
+            </div>
+        </ul>
+    </nav>
 
-<section class="hero">
-    <video autoplay loop muted playsinline class="hero-video">
-        <source src="vidio/KEINDAHAN BAWAH LAUT RAJA AMPAT .mp4" type="video/mp4">
-        Browser Anda tidak mendukung video.
-    </video>
-    <div class="hero-text">
-        <p class="welcome-text">Selamat Datang di Website Nusantara</p>
-        <h3 class="hero-title">
-            Jelajahi kekayaan budaya, keindahan alam, dan warisan maritim Indonesia yang mempesona. 
-            Bersama kita menjaga keindahan dan keberagaman Nusantara.
-        </h3>
-        <button class="cta-button">Gabung Sekarang</button>
-    </div>    
-</section>
-
-    
-
-
-         <!-- Jumbotron Section -->
-<section class="jumbotron">
-   <div class="jumbotron-container">
-       <!-- Teks di sebelah kiri -->
-       <div class="jumbotron-text">
-           <h1>Cerita Singkat</h1>
-           <p>
-            Hari Nusantara berawal dari peristiwa Deklarasi Juanda pada 13 Desember 1957. Deklarasi Juanda dibuat untuk menyatakan kepada dunia bahwa laut Indonesia dan kepulauan Indonesia menjadi satu kesatuan wilayah NKRI.
-            Pernyataan tersebut disampaikan langsung oleh Perdana Menteri Indonesia Djuanda Kartawidjaya. Pada tanggal 13 Desember 1999 baru dicetuskan bahwa tanggal tersebut sebagai "Hari Nusantara".
-            Namun, Hari Nusantara baru ditetapkan pada tanggal 11 Desember 2001 oleh Presiden RI Megawati Soekarnoputri, melalui Surat Keputusan Presiden Nomor 126 Tahun 2001.
-           </p>
-           <button id="cta-button" class="cta-button">Tonton Vidio</button>
-           <!-- Popup Video -->
-<div class="video-popup" id="video-popup">
-    <div class="video-content">
-        <span class="close-btn" id="close-popup">&times;</span>
-        <video controls>
-            <source src="vidio/Hari Nusantara.mp4" type="video/mp4">
-            Browser Anda tidak mendukung elemen video.
+    <section class="hero">
+        <video autoplay loop muted playsinline class="hero-video">
+            <source src="vidio/KEINDAHAN BAWAH LAUT RAJA AMPAT .mp4" type="video/mp4">
+            Browser Anda tidak mendukung video.
         </video>
-    </div>
-</div>
-       </div>
+        <div class="hero-text">
+            <p class="welcome-text">Selamat Datang di Website Nusantara</p>
+            <h3 class="hero-title">
+                Jelajahi kekayaan budaya, keindahan alam, dan warisan maritim Indonesia yang mempesona.
+                Bersama kita menjaga keindahan dan keberagaman Nusantara.
+            </h3>
+            <button class="cta-button">Gabung Sekarang</button>
+        </div>
+    </section>
 
-       <!-- Gambar di sebelah kanan -->
-       <div class="jumbotron-image">
-         <img src="images/jumbo3 (3).jpg" alt="" width="200" height="250">
-       </div>
-   </div>
-     </section>
-     <br>
+
+
+
+    <!-- Jumbotron Section -->
+    <section class="jumbotron">
+        <div class="jumbotron-container">
+            <!-- Teks di sebelah kiri -->
+            <div class="jumbotron-text">
+                <h1>Cerita Singkat</h1>
+                <p>
+                    Hari Nusantara berawal dari peristiwa Deklarasi Juanda pada 13 Desember 1957. Deklarasi Juanda
+                    dibuat untuk menyatakan kepada dunia bahwa laut Indonesia dan kepulauan Indonesia menjadi satu
+                    kesatuan wilayah NKRI.
+                    Pernyataan tersebut disampaikan langsung oleh Perdana Menteri Indonesia Djuanda Kartawidjaya. Pada
+                    tanggal 13 Desember 1999 baru dicetuskan bahwa tanggal tersebut sebagai "Hari Nusantara".
+                    Namun, Hari Nusantara baru ditetapkan pada tanggal 11 Desember 2001 oleh Presiden RI Megawati
+                    Soekarnoputri, melalui Surat Keputusan Presiden Nomor 126 Tahun 2001.
+                </p>
+                <button id="cta-button" class="cta-button">Tonton Vidio</button>
+                <!-- Popup Video -->
+                <div class="video-popup" id="video-popup">
+                    <div class="video-content">
+                        <span class="close-btn" id="close-popup">&times;</span>
+                        <video controls>
+                            <source src="vidio/Hari Nusantara.mp4" type="video/mp4">
+                            Browser Anda tidak mendukung elemen video.
+                        </video>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gambar di sebelah kanan -->
+            <div class="jumbotron-image">
+                <img src="images/jumbo3 (3).jpg" alt="" width="200" height="250">
+            </div>
+        </div>
+    </section>
+    <br>
     <br>
 
-  <footer>
-   <div class="footer-container">
-       <div class="footer-about">
-           <h4>Hari Nusantara</h4>
-           <p>Hari Nusantara baru ditetapkan pada tanggal 11 Desember 2001 oleh Presiden RI Megawati Soekarnoputri, melalui Surat Keputusan Presiden Nomor 126 Tahun 2001.</p>
-           <img src="images/nusantaraday.png" width="395px" height="305px" alt="Hari Nusantara">
-        </div>
-       <div class="footer-links">
-           <h4>Tautan Cepat</h4>
-           <ul>
-               <li><a href="#home">Beranda</a></li>
-               <li><a href="#about">Sejarah</a></li>
-               <li><a href="#budayatradisi.html">Budaya dan Tradisi</a></li>
-               <li><a href="#galeri.html">Galeri</a></li>
-               <li><a href="#kegiatan.html">Kegiatan Nusantara</a></li>
-               <li><a href="https://www.bola.com/ragam/read/4529769/pengertian-budaya-ciri-fungsi-unsur-dan-contohnya-yang-ada-di-indonesia">Pengertian Budaya</a></li>
-               <li><a href="https://budaya-data.kemdikbud.go.id/">Budaya Kita</a></li>
-               <li><a href="https://kumparan.com/pengertian-dan-istilah/pengertian-tradisi-jenis-dan-contohnya-di-indonesia-21OHtJbObQd">Pengertian Tradisi</a></li>
-               <li><a href="https://nasional.kompas.com/read/2023/12/12/00300031/sejarah-hari-nusantara-latar-belakang-dan-tujuan">Sejarah Hari Nusantara</a></li>
-               <li><a href="https://rri.co.id/lain-lain/915065/keberagaman-budaya-indonesia-pilar-persatuan-dan-kesatuan-bangsa">Keberagaman Budaya</a></li>
-               <li><a href="https://perpustakaan.kkp.go.id/knowledgerepository/index.php?p=show_detail&id=30">Sejarah Maritim</a></li>
-               <li><a href="https://www.goodnewsfromindonesia.id/2023/02/27/fakta-menarik-indonesia">Keindahan Alam</a></li>
-               <li><a href="https://www.kompas.com/skola/read/2020/05/29/090000069/potensi-sumber-daya-alam-lautan?page=all">Kekayaan Samudera</a></li>
-           </ul>
-       </div>
-       <div class="social-icons">
-         <h4>Ikuti Kami</h4>
-         <ul>
-             <li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
-             <li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
-             <li><a href="https://youtu.be/PLESqcjC1yM?si=iCXbtSdG5kIWHlhi" target="_blank"><i class="fab fa-youtube"></i></a></li>
-             <li><a href="#" target="_blank"><i class="fab fa-whatsapp"></i></a></li>
-             <li><a href="#" target="_blank"><i class="fab fa-telegram"></i></a></li>
-             <li><a href="#" target="_blank"><i class="fab fa-tiktok"></i></a></li>
-             
-         </ul>
-         <div class="social-image">
-            <img src="images/island.png" width="395px" height="305px" alt="Hari Nusantara">
-        </div>
-     </div>
-     
-     
-     
-     
-   </div>
-   <div class="footer-bottom">
-       <p>&copy; 2024 Nusantara. All rights reserved.</p>
-   </div>
-</footer>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-about">
+                <h4>Hari Nusantara</h4>
+                <p>Hari Nusantara baru ditetapkan pada tanggal 11 Desember 2001 oleh Presiden RI Megawati Soekarnoputri,
+                    melalui Surat Keputusan Presiden Nomor 126 Tahun 2001.</p>
+                <img src="images/nusantaraday.png" width="395px" height="305px" alt="Hari Nusantara">
+            </div>
+            <div class="footer-links">
+                <h4>Tautan Cepat</h4>
+                <ul>
+                    <li><a href="#home">Beranda</a></li>
+                    <li><a href="#about">Sejarah</a></li>
+                    <li><a href="#budayatradisi.html">Budaya dan Tradisi</a></li>
+                    <li><a href="#galeri.html">Galeri</a></li>
+                    <li><a href="#kegiatan.html">Kegiatan Nusantara</a></li>
+                    <li><a
+                            href="https://www.bola.com/ragam/read/4529769/pengertian-budaya-ciri-fungsi-unsur-dan-contohnya-yang-ada-di-indonesia">Pengertian
+                            Budaya</a></li>
+                    <li><a href="https://budaya-data.kemdikbud.go.id/">Budaya Kita</a></li>
+                    <li><a
+                            href="https://kumparan.com/pengertian-dan-istilah/pengertian-tradisi-jenis-dan-contohnya-di-indonesia-21OHtJbObQd">Pengertian
+                            Tradisi</a></li>
+                    <li><a
+                            href="https://nasional.kompas.com/read/2023/12/12/00300031/sejarah-hari-nusantara-latar-belakang-dan-tujuan">Sejarah
+                            Hari Nusantara</a></li>
+                    <li><a
+                            href="https://rri.co.id/lain-lain/915065/keberagaman-budaya-indonesia-pilar-persatuan-dan-kesatuan-bangsa">Keberagaman
+                            Budaya</a></li>
+                    <li><a href="https://perpustakaan.kkp.go.id/knowledgerepository/index.php?p=show_detail&id=30">Sejarah
+                            Maritim</a></li>
+                    <li><a href="https://www.goodnewsfromindonesia.id/2023/02/27/fakta-menarik-indonesia">Keindahan
+                            Alam</a></li>
+                    <li><a
+                            href="https://www.kompas.com/skola/read/2020/05/29/090000069/potensi-sumber-daya-alam-lautan?page=all">Kekayaan
+                            Samudera</a></li>
+                </ul>
+            </div>
+            <div class="social-icons">
+                <h4>Ikuti Kami</h4>
+                <ul>
+                    <li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://youtu.be/PLESqcjC1yM?si=iCXbtSdG5kIWHlhi" target="_blank"><i
+                                class="fab fa-youtube"></i></a></li>
+                    <li><a href="#" target="_blank"><i class="fab fa-whatsapp"></i></a></li>
+                    <li><a href="#" target="_blank"><i class="fab fa-telegram"></i></a></li>
+                    <li><a href="#" target="_blank"><i class="fab fa-tiktok"></i></a></li>
 
- <script src="./javascript/scripts.js"></script>
- <!-- <script>
+                </ul>
+                <div class="social-image">
+                    <img src="images/island.png" width="395px" height="305px" alt="Hari Nusantara">
+                </div>
+            </div>
+
+
+
+
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Nusantara. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="./javascript/scripts.js"></script>
+    <!-- <script>
     // Ambil elemen tombol dan popup
 //let watchVideoButton = document.getElementById('watch-video');
 let videoPopup = document.getElementById('video-popup');
@@ -162,5 +189,12 @@ videoPopup.addEventListener('click', (e) => {
 
  </script> -->
 
+    <script>
+        document.querySelector('.navbar-toggle').addEventListener('click', function () {
+            document.querySelector('.nav-links').classList.toggle('hidden');
+        })
+    </script>
+
 </body>
+
 </html>
